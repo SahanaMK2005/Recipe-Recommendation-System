@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Recipe Recommendation System</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="breakfast">Breakfast</button>
+            <button class="filter-btn" data-category="lunch">Lunch</button>
+            <button class="filter-btn" data-category="dinner">Dinner</button>
+        </div>
+        <div class="recipe-grid" id="recipeGrid">
+            <!-- Recipes will be dynamically inserted here -->
+        </div>
+    </div>
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <!-- Recipe details will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
